@@ -35,9 +35,9 @@ The repo includes:
     -  ```bash
         Host *
             KexAlgorithms +diffie-hellman-group1-sha1
-	          KexAlgorithms +diffie-hellman-group14-sha1
+	        KexAlgorithms +diffie-hellman-group14-sha1
             HostKeyAlgorithms +ssh-rsa
-	          PubKeyAcceptedAlgorithms +ssh-rsa
+	        PubKeyAcceptedAlgorithms +ssh-rsa
 
 
 **Author**
