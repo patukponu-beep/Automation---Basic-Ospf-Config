@@ -17,7 +17,7 @@ import json
 #
 # print(devices)
 
-with open(r"C:\Users\patuk\OneDrive\Desktop\EVE_NG\LABS\AutomationProjects\Inventory\devices.json", "r") as f:
+with open(r"Insert_file_path_here\devices.json", "r") as f: #Insert file path here
     devices = json.load(f)
 print(devices)          # raw dump
 # print(type(devices))    # should say list or dict
