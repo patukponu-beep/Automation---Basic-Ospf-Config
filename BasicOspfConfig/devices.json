@@ -1,0 +1,65 @@
+[
+    {
+        "name": "R1",
+        "device_type": "cisco_ios",
+        "username": "cisco",
+        "password": "cisco",
+        "ip": "192.168.22.143",
+        "links": [
+            {
+                "intf": "gig0/1",
+                "phys_ip": "12.1.1.1",
+                "mask": "255.255.255.252"
+            },
+            {
+                "intf": "gig0/3",
+                "phys_ip": "13.1.1.1",
+                "mask": "255.255.255.252"
+            }
+        ],
+        "lo_ip": "1.1.1.1",
+        "lo_mask": "255.255.255.255"
+    },
+    {
+        "name": "R2",
+        "device_type": "cisco_ios",
+        "username": "cisco",
+        "password": "cisco",
+        "ip": "192.168.22.137",
+        "links": [
+            {
+                "intf": "gig0/1",
+                "phys_ip": "12.1.1.2",
+                "mask": "255.255.255.252"
+            },
+            {
+                "intf": "gig0/2",
+                "phys_ip": "23.1.1.1",
+                "mask": "255.255.255.252"
+            }
+        ],
+        "lo_ip": "2.2.2.2",
+        "lo_mask": "255.255.255.255"
+    },
+    {
+        "name": "R3",
+        "device_type": "cisco_ios",
+        "username": "cisco",
+        "password": "cisco",
+        "ip": "192.168.22.138",
+        "links": [
+            {
+                "intf": "gig0/2",
+                "phys_ip": "23.1.1.2",
+                "mask": "255.255.255.252"
+            },
+            {
+                "intf": "gig0/3",
+                "phys_ip": "13.1.1.2",
+                "mask": "255.255.255.252"
+            }
+        ],
+        "lo_ip": "3.3.3.3",
+        "lo_mask": "255.255.255.255"
+    }
+]

@@ -1,0 +1,18 @@
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#interface gig0/2
+R3(config-if)#ip address 23.1.1.2 255.255.255.252
+R3(config-if)#no shut
+R3(config-if)#interface gig0/3
+R3(config-if)#ip address 13.1.1.2 255.255.255.252
+R3(config-if)#no shut
+R3(config-if)#interface loopback 0
+R3(config-if)#ip add 3.3.3.3 255.255.255.255
+R3(config-if)#exit
+R3(config)#router ospf 1
+R3(config-router)#router-id 3.3.3.3
+R3(config-router)#network 3.3.3.3 0.0.0.0 area 0
+R3(config-router)#network 23.1.1.2 0.0.0.0 area 0
+R3(config-router)#network 13.1.1.2 0.0.0.0 area 0
+R3(config-router)#end
+R3#
